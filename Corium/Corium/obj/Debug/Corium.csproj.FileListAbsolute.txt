@@ -5,3 +5,10 @@ E:\Mechan-Web\Corium\Corium\bin\Debug\Corium.exe
 E:\Mechan-Web\Corium\Corium\bin\Debug\Corium.pdb
 E:\Mechan-Web\Corium\Corium\obj\Debug\Corium.exe
 E:\Mechan-Web\Corium\Corium\obj\Debug\Corium.pdb
+E:\Corium\Corium\Corium\bin\Debug\Corium.exe.config
+E:\Corium\Corium\Corium\bin\Debug\Corium.exe
+E:\Corium\Corium\Corium\bin\Debug\Corium.pdb
+E:\Corium\Corium\Corium\obj\Debug\Corium.csprojResolveAssemblyReference.cache
+E:\Corium\Corium\Corium\obj\Debug\Corium.csproj.CoreCompileInputs.cache
+E:\Corium\Corium\Corium\obj\Debug\Corium.exe
+E:\Corium\Corium\Corium\obj\Debug\Corium.pdb

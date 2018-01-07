@@ -9,14 +9,38 @@ namespace Corium{
     class Program{
         //Testing...
         static void Main(string[] args){
-            BlockChain.NewBlock("11111211", "Testasadsadus testausss");
+            BlockChain.NewBlock("0000000000", "");
 
-            string[] dataArray = new string[] { "a", "b", "c", "d", "e" };
+            while (true){
+                string input = Console.ReadLine();
 
-            for (int i = 0; i < dataArray.Length; i++){
-                BlockChain.Block block = BlockChain.blocks[BlockChain.blocks.Count() - 1];
-                Console.WriteLine(block.hash);
-                BlockChain.NewBlock(block.hash, dataArray[i]);
+                if (input == "mine")
+                    Mine();
+                
+                if (input == "create")
+                    AddBlock(Console.ReadLine());
+
+                if (input == "e")
+                    break;
+
+                for (int i = 0; i < BlockChain.blocks.Count; i++){
+                    BlockChain.InspectBlock(BlockChain.blocks[i]);
+                }
+            }
+        }
+
+        static void AddBlock(string data){
+            Block block = BlockChain.blocks[BlockChain.blocks.Count() - 1];
+            BlockChain.NewBlock(block.hash, data);
+        }
+
+        static void Mine(){
+            try{
+                int blockOnIndex = int.Parse(Console.ReadLine());
+                BlockChain.blocks[blockOnIndex] = Miner.Mine(BlockChain.blocks[blockOnIndex]);
+            }catch (Exception e){
+                Console.WriteLine("Miner error");
+                return;
             }
         }
     }
